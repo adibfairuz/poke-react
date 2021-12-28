@@ -5,7 +5,9 @@ import { BiTrash } from 'react-icons/bi'
 function Card(props) {
     const data = props.data;
 
-    const handleRemove = () => {
+    const handleRemove = (e) => {
+        e.preventDefault()
+        e.stopPropagation()
         props?.handleRemove?.()
     }
 

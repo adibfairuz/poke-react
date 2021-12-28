@@ -3,10 +3,12 @@ import { AiFillHeart } from 'react-icons/ai'
 
 function Card(props) {
     const data = props.data;
-    const handleFavorite = () => {
+    const handleFavorite = (e) => {
+        e.preventDefault()
+        e.stopPropagation()
         props?.handleFavorite?.()
     }
-    const handleClick = () => {
+    const handleClick = (e) => {
         props?.handleClick?.()
     }
     return (

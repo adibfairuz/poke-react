@@ -1,0 +1,33 @@
+.common-tabs{
+    width: 100%;
+    
+    .tabs{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-transform: uppercase;
+        width: 100%;
+        margin-top: 59px;
+        padding: 0 30px;
+        
+        .tab{
+            cursor: pointer;
+            padding: 3px 10px;
+        }
+    
+        .active{
+            padding: 3px 10px;
+            background: $soft-black;
+            color: $white;
+            border-radius: 8px;
+            font-weight: 700;
+        }
+
+        
+    }
+    .component{
+        margin-top: 24px;
+        padding: 0 30px;
+    }
+
+}

@@ -1,0 +1,43 @@
+$grey: #f1f3f4;
+$dark-grey: #828282;
+$white: #f4fbfb;
+$purple: #695787;
+$light-green: #bcd9d8;
+$dark-green: #3a646b;
+$light-blue: #659eb1;
+$soft-black: #4e4e4e;
+
+$colors: (
+    grey: $grey,
+    dark-grey:$dark-grey,
+    white:$white,
+    purple: $purple,
+    light-green: $light-green,
+    dark-green: $light-green,
+    light-blue: $light-blue,
+    soft-black: $soft-black,
+);
+
+@each $key, $value in $colors {
+    @for $i from 1 through 100 {
+        @if $i%10 == 0 {
+            .text-#{$key}-#{$i}{
+                color: darken($value, $i) !important;
+            }
+            .bg-#{$key}-#{$i}{
+                background-color: darken($value, $i) !important;
+            }
+        }
+    }
+    @for $i from 1 through 10 {
+        .border-#{$key}-#{$i}{
+            border: #{$i}px solid $value !important;
+        }
+    }
+    .text-#{$key}{
+        color: $value !important;
+    }
+    .bg-#{$key}{
+        background-color: $value !important;
+    }
+}

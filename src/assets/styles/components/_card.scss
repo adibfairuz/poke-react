@@ -1,0 +1,43 @@
+.card{
+    border-radius: 12px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 0;
+    position: relative;
+    cursor: pointer;
+
+    .fav-btn{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+    }
+    .img{
+        width: 160px;
+        height: 160px;
+    }
+    .name{
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 6px;
+    }
+    .id{
+        text-align: center;
+        margin-top: 6px;
+    }
+    .types{
+        display: flex;
+        justify-content: center;
+        margin-top: 6px;
+
+        .type{
+            background: white;
+            border-radius: 12px;
+            padding: 3px 8px;
+            margin: 0 4px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "./assets/styles/base/colors";
+@import "./assets/styles/base/font-size";
+
+@import "./assets/styles/components/page";
+@import "./assets/styles/components/bottom-tabs";
+@import "./assets/styles/components/card";
+@import "./assets/styles/components/header";
+@import "./assets/styles/components/details-layout";
+@import "./assets/styles/components/common-tabs";
+@import "./assets/styles/components/loading";
+
+@import "./assets/styles/containers/details";
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+body{
+  background-color: $grey;
+  font-family: 'Lato';
+}
+
+a{
+  text-decoration: none;
+}

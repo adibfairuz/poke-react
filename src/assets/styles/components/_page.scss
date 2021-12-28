@@ -1,0 +1,10 @@
+.page{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 68px;
+}

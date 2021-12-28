@@ -1,0 +1,37 @@
+.bottom-tabs-wrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    
+    .bottom-tabs{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        max-width: 500px;
+        box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.15);
+        padding: 8px 0;
+        background: $white;
+        
+        .tab{
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .tab:hover{
+            opacity: 1;
+        }
+
+        .active{
+            opacity: 1;
+            color: black;
+        }
+    }
+}

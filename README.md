@@ -7,3 +7,6 @@ https://gracious-lichterman-ccfa68.netlify.app/
 - [React-redux](https://react-redux.js.org/)
 - [Redux-saga](https://redux-saga.js.org/)
 - [lottiefiles](https://lottiefiles.com/)
+
+## Backend
+[Poke-node](https://github.com/adibfairuz/poke-node)
